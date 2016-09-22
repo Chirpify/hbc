@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.chirpify</groupId>
+  <groupId>com.twitter</groupId>
   <artifactId>hbc-example</artifactId>
   <version>3.0.0</version>
   <packaging>jar</packaging>
   <name>Hosebird Client Examples</name>
   <parent>
-    <groupId>com.chirpify</groupId>
+    <groupId>com.twitter</groupId>
     <artifactId>hbc</artifactId>
     <version>3.0.0</version>
   </parent>
@@ -23,7 +23,7 @@
   </properties>
   <dependencies>
     <dependency>
-      <groupId>com.chirpify</groupId>
+      <groupId>com.twitter</groupId>
       <artifactId>hbc-twitter4j</artifactId>
       <version>3.0.0</version>
     </dependency>
@@ -48,7 +48,7 @@
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.2.1</version>
         <configuration>
-          <mainClass>com.chirpify.hbc.example.SampleStreamExample</mainClass>
+          <mainClass>com.twitter.hbc.example.SampleStreamExample</mainClass>
           <arguments>
             <argument>${consumer.key}</argument>
             <argument>${consumer.secret}</argument>
