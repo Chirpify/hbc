@@ -181,7 +181,8 @@ class ClientBase implements Runnable {
       logger.warn("{} Unknown host - {}", name, request.getURI().getHost());
       addEvent(new Event(EventType.CONNECTION_ERROR, e));
     } catch (IOException e) {
-      logger.warn("{} IOException caught when establishing connection to {}", name, request.getURI());
+      System.out.println(e);
+      logger.warn("{} IOException caught when establishing connection to OH NO {}", name, request.getURI());
       addEvent(new Event(EventType.CONNECTION_ERROR, e));
       reconnectionManager.handleLinearBackoff();
     } catch (Exception e) {

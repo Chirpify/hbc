@@ -14,6 +14,7 @@
 package com.twitter.hbc.core.endpoint;
 
 import com.google.common.base.Joiner;
+import com.twitter.hbc.core.endpoint.StreamingEndpoint;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Maps;
 import com.twitter.hbc.core.HttpConstants;
